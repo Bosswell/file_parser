@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 50px;
+                max-width: calc(100% - 60px);
+                margin: 20px auto;
+            }
+
+            textarea {
+                width: 100%;
+                height: 600px;
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            #parser-button {
+                width: 300px;
+                padding: 15px 0;
+                border: none;
+                border-radius: 10px;
+                background: #8c0;
+                text-align: center;
+                font-size: 18px;
+                margin-top: 15px;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            #parser-button:focus,
+            #parser-button:active {
+                border: none;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-group">
+                <textarea id="text" rows="40" cols="30"></textarea>
+                <button id="parser-button">Parsuj</button>
+            </div>
+
+            <div class="input-group">
+                <textarea id="result" rows="40" cols="30"></textarea>
+            </div>
+        </div>
+        
+        <script src="parser.js"></script>
+    </body>
+</html>

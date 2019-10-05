@@ -9,7 +9,7 @@ parserButton.addEventListener('click', () => {
     
     if (!Number.isInteger(idObservationLen)) {
         Swal.fire({
-            text: 'Wpisano niepoprawną wartość dla pola definiującego długośc identyfikatora operacji',
+            text: 'Wpisano niepoprawną wartość dla pola definiującego długośc identyfikatora obserwacji',
             title: 'Błąd!',
             type: 'error',
             confirmButtonText: 'Ok'

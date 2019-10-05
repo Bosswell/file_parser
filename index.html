@@ -35,12 +35,39 @@
                 border: none;
                 outline: none;
             }
+
+            .pop-message {
+                text-align: left !important;
+            }
+
+            .green-color {
+                color: #8c0;
+            }
+
+            #idLen {
+                display: block;
+                width: 50px;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #0005;
+                margin-top: 5px;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            label {
+                display: block;
+                margin-top: 10px;
+                font-size: 17px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="input-group">
                 <textarea id="text" rows="40" cols="30"></textarea>
+                <label for="idLen">Ilość znaków identyfikatora obserwacji bez uwzględnienia $ np dla [$2-10256] wartość wynosi 7</label>
+                <input type="text" id="idLen" value="7">
                 <button id="parser-button">Parsuj</button>
             </div>
 
@@ -48,7 +75,8 @@
                 <textarea id="result" rows="40" cols="30"></textarea>
             </div>
         </div>
-        
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="parser.js"></script>
     </body>
 </html>
